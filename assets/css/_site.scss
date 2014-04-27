@@ -1,0 +1,67 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: $background-color;
+  font-family: $font-main;
+  font-weight: $font-light;
+  font-style: normal;
+  font-size: 1.4rem;
+}
+
+h1 {
+  font-weight: $font-bolder;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+header {
+  a, :link, :visited {
+    color: $secondary-color;
+  }
+
+  .header-line {
+    border-bottom: 3px solid $secondary-color;
+  }
+}
+
+footer {
+  background-color: $footer-bg-color;
+  color: $footer-color;
+  padding: 1rem 0 4rem 0;
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  a {
+    font-weight: $font-bolder;
+  }
+
+  .contact {
+    float: left;
+    width: 40%;
+  }
+}
+
+a, :link, :visited {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 880px;
+
+  .inner {
+    padding: 0 8rem;
+  }
+}
