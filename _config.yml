@@ -5,4 +5,4 @@ exclude: ['Gemfile', 'Gemfile.lock']
 sass:
   style: expanded
   deploy_style: compressed
-  compile_in_place: false
+  compile_in_place: true
