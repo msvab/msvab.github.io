@@ -19,6 +19,21 @@ h1 {
 
 nav {
   float: right;
+  font-weight: 400;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+
+  li {
+    padding: 0.67em;
+
+    &.active {
+      background-color: $footer-bg-color;
+    }
+  }
+
+  ul {
+    margin: 0;
+  }
 }
 
 header {
@@ -58,10 +73,36 @@ a, :link, :visited {
 
 .wrapper {
   margin: 0 auto;
-  padding: 0;
   max-width: 880px;
 
   .inner {
     padding: 0 8rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+section {
+  padding: 6rem 0;
+
+  h2 {
+    color: $secondary-color;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 0;
+
+    &.landing-title {
+      font-size: 6rem;
+    }
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  a, :link, :visited {
+    color: $secondary-color;
   }
 }

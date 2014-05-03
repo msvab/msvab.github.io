@@ -7,7 +7,7 @@
           {% assign pages = site.pages | sort:"url" %}
           {% for p in pages order:ascending %}
             {% if p.navigable == true %}
-              <li><a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a></li>
+              <li {% if p.permalink == page.url %}class="active"{% endif %}><a href="{{ p.url }}">{{ p.title }}</a></li>
             {% endif %}
           {% endfor %}
         </ul>

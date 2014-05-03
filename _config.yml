@@ -1,6 +1,8 @@
 name: Michal Šváb
 markdown: redcarpet
 pygments: false
+relative_permalinks: false
+encoding: utf-8
 exclude: ['Gemfile', 'Gemfile.lock']
 sass:
   style: expanded
