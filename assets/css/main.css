@@ -902,78 +902,86 @@ header nav li:hover {
 }
 /* line 45, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 header nav li.active {
-  color: white;
   background-color: #2980b9;
 }
-/* line 51, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 48, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+header nav li.active a {
+  color: white;
+}
+/* line 54, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 header nav ul {
   margin: 0;
 }
 
-/* line 57, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 60, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 footer {
   background-color: #f6f6f6;
   color: #9c9c9c;
   padding: 1rem 0 4rem 0;
 }
-/* line 62, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 65, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 footer h3 {
   text-transform: uppercase;
   font-size: 2rem;
 }
-/* line 67, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 70, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 footer a {
   font-weight: 400;
 }
-/* line 71, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 74, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 footer .contact {
   float: left;
   width: 40%;
 }
 
-/* line 77, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 80, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 .wrapper {
   margin: 0 auto;
   max-width: 880px;
 }
-/* line 81, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 84, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 .wrapper .inner {
   padding: 0 8rem;
 }
 
-/* line 86, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 89, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 90, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
-section {
-  padding: 6rem 0;
-}
 /* line 93, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+section {
+  padding: 5rem 0;
+}
+/* line 96, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 section h2 {
   color: #2980b9;
   text-transform: uppercase;
   font-size: 4rem;
   margin-bottom: 0;
 }
-/* line 99, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
-section h2.landing-title {
-  font-size: 6rem;
-}
-/* line 104, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 103, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 section p {
   font-size: 2rem;
 }
-/* line 108, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 107, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 section a, section :link, section :visited {
   color: #2980b9;
 }
-/* line 112, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 111, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+section .feature {
+  height: 80%;
+  margin: auto;
+}
+/* line 115, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+section .feature h2 {
+  font-size: 6rem;
+}
+/* line 120, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 section .contact-links {
   margin-top: 5rem;
 }
-/* line 115, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 123, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 section .contact-links a {
   display: inline-block;
   width: 32.5%;
@@ -986,15 +994,15 @@ section .contact-links a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 127, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 135, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 section .contact-links a.email:before {
   content: "\f0e0";
 }
-/* line 131, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 139, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 section .contact-links a.linkedin:before {
   content: "\f0e1";
 }
-/* line 135, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 143, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 section .contact-links a.twitter:before {
   content: "\f099";
 }

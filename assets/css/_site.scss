@@ -43,8 +43,11 @@ header {
       }
 
       &.active {
-        color: white;
         background-color: $secondary-color;
+
+        a {
+          color: white;
+        }
       }
     }
 
@@ -88,17 +91,13 @@ footer {
 }
 
 section {
-  padding: 6rem 0;
+  padding: 5rem 0;
 
   h2 {
     color: $secondary-color;
     text-transform: uppercase;
     font-size: 4rem;
     margin-bottom: 0;
-
-    &.landing-title {
-      font-size: 6rem;
-    }
   }
 
   p {
@@ -107,6 +106,15 @@ section {
 
   a, :link, :visited {
     color: $secondary-color;
+  }
+
+  .feature {
+    height: 80%;
+    margin: auto;
+
+    h2 {
+      font-size: 6rem;
+    }
   }
 
   .contact-links {
