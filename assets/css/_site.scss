@@ -8,6 +8,12 @@ body {
   font-weight: $font-light;
   font-style: normal;
   font-size: 1.4rem;
+  color: $primary-color;
+}
+
+a, :link, :visited {
+  color: $primary-color;
+  text-decoration: none;
 }
 
 h1 {
@@ -17,32 +23,34 @@ h1 {
   float: left;
 }
 
-nav {
-  float: right;
+header {
   font-weight: 400;
   font-size: 2.6rem;
   text-transform: uppercase;
 
-  li {
-    padding: 0.67em;
-
-    &.active {
-      background-color: $footer-bg-color;
-    }
-  }
-
-  ul {
-    margin: 0;
-  }
-}
-
-header {
-  a, :link, :visited {
-    color: $secondary-color;
-  }
-
   .header-line {
     border-bottom: 3px solid $secondary-color;
+  }
+
+  nav {
+    float: right;
+
+    li {
+      padding: 0.67em;
+
+      &:hover {
+        background-color: $footer-bg-color;
+      }
+
+      &.active {
+        color: white;
+        background-color: $secondary-color;
+      }
+    }
+
+    ul {
+      margin: 0;
+    }
   }
 }
 
@@ -64,11 +72,6 @@ footer {
     float: left;
     width: 40%;
   }
-}
-
-a, :link, :visited {
-  color: $primary-color;
-  text-decoration: none;
 }
 
 .wrapper {
