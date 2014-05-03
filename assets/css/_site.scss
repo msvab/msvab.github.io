@@ -108,4 +108,33 @@ section {
   a, :link, :visited {
     color: $secondary-color;
   }
+
+  .contact-links {
+    margin-top: 5rem;
+
+    a {
+      display: inline-block;
+      width: 32.5%;
+      text-align: center;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      font-size: 6rem;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+
+      &.email:before {
+        content: "\f0e0";
+      }
+
+      &.linkedin:before {
+        content: "\f0e1";
+      }
+
+      &.twitter:before {
+        content: "\f099";
+      }
+    }
+  }
 }
