@@ -2,6 +2,5 @@ source 'https://rubygems.org'
 
 ruby '2.1.1'
 
-gem 'bundler'
-gem 'jekyll-sass'
-gem 'github-pages'
+gem 'jekyll-sass', '1.2.1'
+gem 'github-pages', '18'

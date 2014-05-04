@@ -98,6 +98,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler
-  github-pages
-  jekyll-sass
+  github-pages (= 18)
+  jekyll-sass (= 1.2.1)
