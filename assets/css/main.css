@@ -991,79 +991,80 @@ header nav ul {
 /* line 97, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 header nav ul li {
   padding: 0.67em;
+  float: left;
 }
-/* line 100, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 101, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 header nav ul li:hover {
   background-color: #f6f6f6;
 }
-/* line 104, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 105, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 header nav ul li.active {
   background-color: #2980b9;
 }
-/* line 107, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 108, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 header nav ul li.active a {
   color: white;
 }
 
-/* line 116, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 117, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 footer {
   background-color: #f6f6f6;
   color: #9c9c9c;
   padding: 1rem 0 1rem 0;
 }
-/* line 121, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 122, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 footer h3 {
   text-transform: uppercase;
   font-size: 2rem;
 }
-/* line 126, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 127, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 footer a {
   font-weight: 400;
 }
-/* line 130, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 131, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 footer .contact {
   float: left;
   width: 40%;
 }
 @media only screen and (max-width: 780px) {
-  /* line 130, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+  /* line 131, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
   footer .contact {
     width: auto;
   }
 }
 
-/* line 140, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 141, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 section {
   padding: 5rem 0;
 }
-/* line 143, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 144, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 section h2 {
   color: #2980b9;
   text-transform: uppercase;
   font-size: 4rem;
   margin-bottom: 0;
 }
-/* line 150, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 151, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 section p {
   font-size: 2rem;
 }
-/* line 154, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 155, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 section a, section :link, section :visited {
   color: #2980b9;
 }
-/* line 158, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 159, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 section .feature {
   margin: auto;
 }
-/* line 161, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 162, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 section .feature h2 {
   font-size: 6rem;
 }
-/* line 166, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 167, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 section .contact-links {
   margin-top: 5rem;
 }
-/* line 169, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 170, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 section .contact-links a {
   display: inline-block;
   width: 32.5%;
@@ -1076,15 +1077,101 @@ section .contact-links a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 181, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 182, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 section .contact-links a.email:before {
   content: "\f0e0";
 }
-/* line 185, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 186, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 section .contact-links a.linkedin:before {
   content: "\f0e1";
 }
-/* line 189, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 190, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 section .contact-links a.twitter:before {
   content: "\f099";
+}
+/* line 196, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+section .timeline {
+  list-style: none;
+  margin: 50px 0 30px 120px;
+  padding-left: 30px;
+  border-left: 8px solid #2980b9;
+}
+/* line 202, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+section .timeline li {
+  margin: 40px 0;
+  position: relative;
+}
+/* line 206, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+section .timeline li input[type="radio"] {
+  display: none;
+}
+/* line 211, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+section .timeline li .event-title .date {
+  margin-top: -10px;
+  top: 50%;
+  left: -158px;
+  font-size: 2rem;
+  line-height: 20px;
+  position: absolute;
+}
+/* line 220, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+section .timeline li .event-title .circle {
+  margin-top: -10px;
+  top: 50%;
+  left: -44px;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border: 5px solid #2980b9;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+}
+/* line 233, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+section .timeline li .event-title label {
+  font-size: 2.3rem;
+  font-weight: 400;
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+  top: 20px;
+  left: 22px;
+}
+/* line 244, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+section .timeline li .event-desc {
+  padding: 35px 20px 0;
+  border: 2px solid #2980b9;
+  border-radius: 0.5em;
+  position: relative;
+  margin-right: 20px;
+}
+/* line 251, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+section .timeline li .event-desc:before, section .timeline li .event-desc:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  position: absolute;
+  pointer-events: none;
+  right: 100%;
+}
+/* line 261, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+section .timeline li .event-desc:before {
+  border-right-color: inherit;
+  border-width: 20px;
+  top: 50%;
+  margin-top: -20px;
+}
+/* line 268, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+section .timeline li .event-desc:after {
+  border-right-color: #2980b9;
+  border-width: 17px;
+  top: 50%;
+  margin-top: -17px;
+}
+/* line 275, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+section .timeline li .event-desc p {
+  text-align: justify;
+  word-break: break-word;
+  hyphens: auto;
 }
