@@ -4,6 +4,8 @@ pygments: false
 relative_permalinks: false
 encoding: utf-8
 exclude: ['Gemfile', 'Gemfile.lock']
+gems:
+  - jekyll-sitemap
 sass:
   style: expanded
   compile_in_place: true
