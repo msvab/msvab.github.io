@@ -895,7 +895,7 @@ body {
 }
 
 /* line 31, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
-header, section, footer {
+header, .content, footer {
   -webkit-box-flex: 1;
   -webkit-flex: 1 100%;
   -moz-box-flex: 1;
@@ -913,7 +913,7 @@ header {
 }
 
 /* line 39, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
-section {
+.content {
   -webkit-align-self: stretch;
   -moz-align-self: stretch;
   -ms-flex-item-align: stretch;
@@ -1034,45 +1034,45 @@ footer .contact {
 }
 
 /* line 141, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
-section {
+.content {
   padding: 5rem 0;
 }
 /* line 144, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
-section h2 {
+.content h2 {
   color: #2980b9;
   text-transform: uppercase;
   font-size: 4rem;
   margin-bottom: 0;
 }
 /* line 151, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
-section p {
+.content p {
   font-size: 2rem;
 }
 /* line 155, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
-section a, section :link, section :visited {
+.content a, .content :link, .content :visited {
   color: #2980b9;
 }
 /* line 159, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
-section .feature {
+.content .feature {
   margin: auto;
 }
 /* line 162, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
-section .feature h2 {
+.content .feature h2 {
   font-size: 6rem;
 }
 /* line 167, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
-section .contact-links {
+.content .contact-links {
   margin-top: 5rem;
 }
 /* line 170, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
-section .contact-links a {
+.content .contact-links a {
   display: inline-block;
   width: 32.5%;
   text-align: center;
   font-size: 6rem;
 }
 /* line 176, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
-section .contact-links a.email {
+.content .contact-links a.email {
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
@@ -1081,11 +1081,11 @@ section .contact-links a.email {
   -moz-osx-font-smoothing: grayscale;
 }
 /* line 23, /Users/msvab/dev/msvab.github.io/assets/css/_mixins.scss */
-section .contact-links a.email:before {
+.content .contact-links a.email:before {
   content: "\f0e0";
 }
 /* line 180, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
-section .contact-links a.linkedin {
+.content .contact-links a.linkedin {
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
@@ -1094,11 +1094,11 @@ section .contact-links a.linkedin {
   -moz-osx-font-smoothing: grayscale;
 }
 /* line 23, /Users/msvab/dev/msvab.github.io/assets/css/_mixins.scss */
-section .contact-links a.linkedin:before {
+.content .contact-links a.linkedin:before {
   content: "\f0e1";
 }
 /* line 184, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
-section .contact-links a.twitter {
+.content .contact-links a.twitter {
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
@@ -1107,7 +1107,7 @@ section .contact-links a.twitter {
   -moz-osx-font-smoothing: grayscale;
 }
 /* line 23, /Users/msvab/dev/msvab.github.io/assets/css/_mixins.scss */
-section .contact-links a.twitter:before {
+.content .contact-links a.twitter:before {
   content: "\f099";
 }
 
