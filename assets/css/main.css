@@ -1114,20 +1114,26 @@ section .contact-links a.twitter:before {
 /* line 2, /Users/msvab/dev/msvab.github.io/assets/css/_timeline.scss */
 section.timeline ul {
   list-style: none;
-  margin: 50px 0 30px 120px;
+  margin: 50px 0 30px 20%;
   padding-left: 30px;
   border-left: 8px solid #2980b9;
 }
-/* line 8, /Users/msvab/dev/msvab.github.io/assets/css/_timeline.scss */
+@media only screen and (max-width: 480px) {
+  /* line 2, /Users/msvab/dev/msvab.github.io/assets/css/_timeline.scss */
+  section.timeline ul {
+    margin-left: 20%;
+  }
+}
+/* line 12, /Users/msvab/dev/msvab.github.io/assets/css/_timeline.scss */
 section.timeline ul li {
   margin: 40px 0;
   position: relative;
 }
-/* line 12, /Users/msvab/dev/msvab.github.io/assets/css/_timeline.scss */
+/* line 16, /Users/msvab/dev/msvab.github.io/assets/css/_timeline.scss */
 section.timeline ul li p {
   margin: 0 0 15px;
 }
-/* line 16, /Users/msvab/dev/msvab.github.io/assets/css/_timeline.scss */
+/* line 20, /Users/msvab/dev/msvab.github.io/assets/css/_timeline.scss */
 section.timeline ul li .date {
   margin-top: -10px;
   top: 50%;
@@ -1136,7 +1142,7 @@ section.timeline ul li .date {
   font-weight: 400;
   position: absolute;
 }
-/* line 25, /Users/msvab/dev/msvab.github.io/assets/css/_timeline.scss */
+/* line 29, /Users/msvab/dev/msvab.github.io/assets/css/_timeline.scss */
 section.timeline ul li .circle {
   margin-top: -10px;
   top: 50%;
@@ -1149,21 +1155,29 @@ section.timeline ul li .circle {
   display: block;
   position: absolute;
 }
-/* line 39, /Users/msvab/dev/msvab.github.io/assets/css/_timeline.scss */
+/* line 43, /Users/msvab/dev/msvab.github.io/assets/css/_timeline.scss */
+section.timeline ul li .detail.col-2 {
+  width: 50%;
+  float: left;
+}
+@media only screen and (max-width: 480px) {
+  /* line 43, /Users/msvab/dev/msvab.github.io/assets/css/_timeline.scss */
+  section.timeline ul li .detail.col-2 {
+    width: 100%;
+  }
+}
+/* line 52, /Users/msvab/dev/msvab.github.io/assets/css/_timeline.scss */
 section.timeline ul li .detail h3 {
   margin-top: 20px;
   margin-bottom: 0;
   font-size: 1.8rem;
-  color: #2980b9;
+  color: #2c3e50;
 }
-/* line 46, /Users/msvab/dev/msvab.github.io/assets/css/_timeline.scss */
+/* line 59, /Users/msvab/dev/msvab.github.io/assets/css/_timeline.scss */
 section.timeline ul li .detail p {
   font-size: 1.4rem;
-  text-align: justify;
-  word-break: break-word;
-  hyphens: auto;
 }
-/* line 53, /Users/msvab/dev/msvab.github.io/assets/css/_timeline.scss */
+/* line 63, /Users/msvab/dev/msvab.github.io/assets/css/_timeline.scss */
 section.timeline ul li .detail span.location {
   font-family: FontAwesome;
   font-style: normal;
@@ -1171,7 +1185,6 @@ section.timeline ul li .detail span.location {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding-left: 5px;
 }
 /* line 23, /Users/msvab/dev/msvab.github.io/assets/css/_mixins.scss */
 section.timeline ul li .detail span.location:before {
