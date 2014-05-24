@@ -1087,7 +1087,7 @@ footer .contact {
 /* line 190, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 .content .contact-links a {
   display: inline-block;
-  width: 32.5%;
+  width: 19.3%;
   text-align: center;
   font-size: 6rem;
 }
@@ -1129,6 +1129,32 @@ footer .contact {
 /* line 23, /Users/msvab/dev/msvab.github.io/assets/css/_mixins.scss */
 .content .contact-links a.twitter:before {
   content: "\f099";
+}
+/* line 208, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+.content .contact-links a.facebook {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 23, /Users/msvab/dev/msvab.github.io/assets/css/_mixins.scss */
+.content .contact-links a.facebook:before {
+  content: "\f082";
+}
+/* line 212, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+.content .contact-links a.github {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 23, /Users/msvab/dev/msvab.github.io/assets/css/_mixins.scss */
+.content .contact-links a.github:before {
+  content: "\f092";
 }
 
 /* line 2, /Users/msvab/dev/msvab.github.io/assets/css/_timeline.scss */
