@@ -1045,33 +1045,53 @@ footer .contact {
   margin-bottom: 0;
 }
 /* line 151, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+.content h3 {
+  color: #2980b9;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  margin: 0;
+}
+/* line 158, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+.content ul {
+  list-style: none;
+}
+/* line 161, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+.content ul li {
+  font-size: 1.8rem;
+}
+/* line 164, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+.content ul li p {
+  font-size: 1.6rem;
+  margin: 0.3rem 0 0.3rem 3rem;
+}
+/* line 171, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 .content p {
   font-size: 2rem;
 }
-/* line 155, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 175, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 .content a, .content :link, .content :visited {
   color: #2980b9;
 }
-/* line 159, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 179, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 .content .feature {
   margin: auto;
 }
-/* line 162, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 182, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 .content .feature h2 {
   font-size: 6rem;
 }
-/* line 167, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 187, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 .content .contact-links {
   margin-top: 5rem;
 }
-/* line 170, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 190, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 .content .contact-links a {
   display: inline-block;
   width: 32.5%;
   text-align: center;
   font-size: 6rem;
 }
-/* line 176, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 196, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 .content .contact-links a.email {
   font-family: FontAwesome;
   font-style: normal;
@@ -1084,7 +1104,7 @@ footer .contact {
 .content .contact-links a.email:before {
   content: "\f0e0";
 }
-/* line 180, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 200, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 .content .contact-links a.linkedin {
   font-family: FontAwesome;
   font-style: normal;
@@ -1097,7 +1117,7 @@ footer .contact {
 .content .contact-links a.linkedin:before {
   content: "\f0e1";
 }
-/* line 184, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
+/* line 204, /Users/msvab/dev/msvab.github.io/assets/css/_site.scss */
 .content .contact-links a.twitter {
   font-family: FontAwesome;
   font-style: normal;

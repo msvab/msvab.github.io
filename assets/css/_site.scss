@@ -148,6 +148,26 @@ footer {
     margin-bottom: 0;
   }
 
+  h3 {
+    color: $secondary-color;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      font-size: 1.8rem;
+
+      p {
+        font-size: 1.6rem;
+        margin: 0.3rem 0 0.3rem 3rem
+      }
+    }
+  }
+
   p {
     font-size: 2rem;
   }
