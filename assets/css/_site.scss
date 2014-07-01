@@ -97,6 +97,7 @@ header {
       li {
         padding: 0.67em;
         float: left;
+        list-style: none;
 
         &:hover {
           background-color: $footer-bg-color;
