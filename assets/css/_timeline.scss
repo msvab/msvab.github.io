@@ -59,10 +59,6 @@ section.timeline {
         p {
           font-size: 1.4rem;
         }
-
-        span.location {
-          @include icon("\f041\00a0");
-        }
       }
     }
   }
