@@ -9,6 +9,15 @@ html {
   @media #{$retina-phone} {
     font-size: 55%;
   }
+
+  @media print {
+    font-size: 57%;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 0;
 }
 
 body {
@@ -47,6 +56,13 @@ footer {
 a, :link, :visited {
   color: $primary-color;
   text-decoration: none;
+
+  &:after {
+    @media print {
+      /* print by default shows URLs next to the link texts */
+      content: "" !important;
+    }
+  }
 }
 
 .text-center {
@@ -88,6 +104,10 @@ header {
 
   nav {
     float: right;
+
+    @media print {
+      display: none;
+    }
 
     ul {
       padding: 0;
@@ -137,22 +157,40 @@ footer {
       width: auto;
     }
   }
+
+  @media print {
+    display: none;
+  }
 }
 
 .content {
   padding: 5rem 0;
 
+  @media print {
+    padding: 0;
+  }
+
   h2 {
-    color: $secondary-color;
+    color: $secondary-color !important;
     text-transform: uppercase;
     font-size: 4rem;
+    font-weight: 400;
     margin-bottom: 1rem;
+
+    @media print {
+      font-size: 2.5rem;
+    }
   }
 
   h3 {
     text-transform: uppercase;
     font-size: 2.4rem;
+    font-weight: 400;
     margin: 0;
+
+    @media print {
+      font-size: 1.9rem;
+    }
 
     a, :link, :visited {
       color: $primary-color;
@@ -174,6 +212,10 @@ footer {
 
   p {
     font-size: 2rem;
+
+    @media print {
+      font-size: 1.7rem;
+    }
   }
 
   a, :link, :visited {
@@ -236,4 +278,13 @@ footer {
 
 span.location {
   @include icon("\f041\00a0");
+}
+
+.page-break	{
+  display: none;
+
+  @media print {
+    display: block;
+    page-break-before: always;
+  }
 }
