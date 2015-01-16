@@ -16,8 +16,8 @@ html {
 }
 
 @page {
-  size: A4;
-  margin: 0;
+  size: A4;   /* auto is the initial value */
+  margin: 25pt; /* this affects the margin in the printer settings */
 }
 
 body {
@@ -96,6 +96,10 @@ header {
     font-size: 2.6rem;
     text-transform: uppercase;
     float: left;
+
+    @media print {
+      margin-top: 0;
+    }
   }
 
   .header-line {
@@ -171,11 +175,12 @@ footer {
   }
 
   h2 {
-    color: $secondary-color !important;
+    color: $secondary-color !important; /* has to be !important for print mode */
     text-transform: uppercase;
     font-size: 4rem;
     font-weight: 400;
     margin-bottom: 1rem;
+    margin-top: 0.8em;
 
     @media print {
       font-size: 2.5rem;
@@ -190,6 +195,7 @@ footer {
 
     @media print {
       font-size: 1.9rem;
+      page-break-after: auto;
     }
 
     a, :link, :visited {
@@ -285,6 +291,9 @@ span.location {
 
   @media print {
     display: block;
+    height: 1px;
+    width: 100%;
     page-break-before: always;
+    page-break-inside: avoid;
   }
 }
