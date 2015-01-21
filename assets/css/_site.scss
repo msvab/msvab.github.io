@@ -20,6 +20,13 @@ html {
   margin: 25pt; /* this affects the margin in the printer settings */
 }
 
+@media print and (color) {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
 body {
   background: $background-color;
   font-family: $font-main;
@@ -180,10 +187,11 @@ footer {
     font-size: 4rem;
     font-weight: 400;
     margin-bottom: 1rem;
-    margin-top: 0.8em;
+    margin-top: 3rem;
 
     @media print {
       font-size: 2.5rem;
+      orphans: 0;
     }
   }
 
@@ -191,11 +199,12 @@ footer {
     text-transform: uppercase;
     font-size: 2.4rem;
     font-weight: 400;
-    margin: 0;
+    margin: 2rem 0 0 0;
 
     @media print {
       font-size: 1.9rem;
-      page-break-after: auto;
+      page-break-after: avoid;
+
     }
 
     a, :link, :visited {
@@ -239,6 +248,10 @@ footer {
       margin-top: 1rem;
       margin-left: 2rem;
       list-style: circle;
+    }
+
+    @media print {
+      page-break-inside: avoid;
     }
   }
 
@@ -292,8 +305,7 @@ span.location {
   @media print {
     display: block;
     height: 1px;
-    width: 100%;
+    width: 1px;
     page-break-before: always;
-    page-break-inside: avoid;
   }
 }
