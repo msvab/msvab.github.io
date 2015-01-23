@@ -11,13 +11,13 @@ html {
   }
 
   @media print {
-    font-size: 57%;
+    font-size: 55%;
   }
 }
 
 @page {
   size: A4;   /* auto is the initial value */
-  margin: 25pt; /* this affects the margin in the printer settings */
+  margin: 27pt; /* this affects the margin in the printer settings */
 }
 
 @media print and (color) {
