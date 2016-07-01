@@ -11,13 +11,19 @@ html {
   }
 
   @media print {
-    font-size: 50%;
+    font-size: 40%;
   }
 }
 
 @page {
   size: A4;   /* auto is the initial value */
   margin: 27pt; /* this affects the margin in the printer settings */
+}
+
+@media print {
+  * {
+    overflow: visible;
+  }
 }
 
 @media print and (color) {
@@ -190,7 +196,7 @@ footer {
     margin-top: 3rem;
 
     @media print {
-      font-size: 2.5rem;
+      font-size: 3rem;
       orphans: 0;
     }
   }
@@ -304,9 +310,13 @@ span.location {
   display: none;
 
   @media print {
+    position: relative;
     display: block;
-    height: 1px;
+    visibility: hidden;
+    height: 10px;
     width: 1px;
     page-break-before: always;
+    page-break-inside: avoid;
+    -webkit-region-break-inside: avoid;
   }
 }
