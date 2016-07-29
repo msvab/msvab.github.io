@@ -9,7 +9,7 @@ $background-color:  #fff;
 $footer-color:      #9c9c9c;
 $footer-bg-color:   #f6f6f6;
 
-$phone: "only screen and (max-width : 480px)";
+$phone: "only screen and (max-width : 370px)";
 $retina-phone: "only screen and (max-width : 780px)";
 
 @mixin icon($icon) {
