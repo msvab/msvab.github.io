@@ -4,7 +4,7 @@ lsi: false
 relative_permalinks: false
 encoding: utf-8
 exclude: ['Gemfile', 'Gemfile.lock']
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-sass-converter
 sass:
