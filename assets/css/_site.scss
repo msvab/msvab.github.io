@@ -249,6 +249,10 @@ footer {
       font-size: 1.8rem;
       padding-left: 40px;
       margin: 1rem 0;
+
+      span {
+        padding-right: 0.4em;
+      }
     }
 
     li {
@@ -300,10 +304,6 @@ footer {
       }
     }
   }
-}
-
-span.location {
-  @include icon("\f041\00a0");
 }
 
 .page-break	{
