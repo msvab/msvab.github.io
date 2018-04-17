@@ -20,12 +20,6 @@ html {
   margin: 27pt; /* this affects the margin in the printer settings */
 }
 
-@media print {
-  * {
-    overflow: visible;
-  }
-}
-
 @media print and (color) {
   * {
     -webkit-print-color-adjust: exact;
@@ -84,7 +78,7 @@ a, :link, :visited {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 880px;
+  max-width: 920px;
 
   .inner {
     padding: 0 8rem;
@@ -194,6 +188,7 @@ footer {
     font-weight: 400;
     margin-bottom: 1rem;
     margin-top: 3rem;
+    page-break-after: avoid;
 
     @media print {
       font-size: 3rem;
@@ -205,17 +200,26 @@ footer {
     text-transform: uppercase;
     font-size: 2.4rem;
     font-weight: 400;
-    margin: 2.5rem 0 0 0;
+    margin: 2em 0 0 0;
+    page-break-after: avoid;
 
     @media print {
       font-size: 1.9rem;
-      page-break-after: avoid;
 
     }
 
     a, :link, :visited {
       color: $primary-color;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
+  }
+
+  section {
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
 
   ul {
@@ -246,12 +250,13 @@ footer {
 
   .job-detail {
     p {
-      font-size: 1.8rem;
-      padding-left: 40px;
+      font-size: 1.6rem;
+      padding-left: 1.1em;
       margin: 1rem 0;
 
       span {
-        padding-right: 0.4em;
+        padding: 0 0.4em 0 0.6em;
+        font-size: 1.2rem;
       }
     }
 
@@ -306,17 +311,10 @@ footer {
   }
 }
 
-.page-break	{
-  display: none;
-
-  @media print {
-    position: relative;
-    display: block;
-    visibility: hidden;
-    height: 10px;
-    width: 1px;
+@media print {
+  .page-break	{
+    padding-top: 5em;
     page-break-before: always;
     page-break-inside: avoid;
-    -webkit-region-break-inside: avoid;
   }
 }
