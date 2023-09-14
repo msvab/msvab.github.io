@@ -9,5 +9,5 @@ plugins:
   - jekyll-sitemap
   - jekyll-sass-converter
 sass:
-  style: :compressed
+  style: 'compressed'
   sass_dir: assets/css
