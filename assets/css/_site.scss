@@ -282,26 +282,6 @@ footer {
       width: 19.3%;
       text-align: center;
       font-size: 6rem;
-
-      &.email {
-        @include icon("\f0e0");
-      }
-
-      &.linkedin {
-        @include icon("\f0e1");
-      }
-
-      &.twitter {
-        @include icon("\f099");
-      }
-
-      &.facebook {
-        @include icon("\f082");
-      }
-
-      &.github {
-        @include icon("\f092");
-      }
     }
   }
 }
