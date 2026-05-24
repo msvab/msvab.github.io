@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+required_ruby="$(cat .ruby-version)"
+export RBENV_VERSION="$required_ruby"
+export CC="${CC:-clang}"
+export CXX="${CXX:-clang++}"
+
+if ! command -v rbenv >/dev/null 2>&1; then
+  echo "rbenv is required. Install it first: https://github.com/rbenv/rbenv"
+  exit 1
+fi
+
+if ! rbenv versions --bare | grep -Fxq "$required_ruby"; then
+  echo "Ruby $required_ruby is not installed in rbenv."
+  echo "Run: rbenv install $required_ruby"
+  exit 1
+fi
+
+current_ruby="$(rbenv version-name)"
+if [ "$current_ruby" != "$required_ruby" ]; then
+  echo "Activating Ruby $required_ruby for this repo."
+  rbenv local "$required_ruby"
+fi
+
+sdk_cxx_include="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+current_cxx="$(rbenv exec ruby -rrbconfig -e 'print RbConfig::CONFIG["CXX"]')"
+
+if [ "$current_cxx" = "false" ] && [ -f "$sdk_cxx_include/iostream" ]; then
+  echo "Patching local Ruby C++ config for recent macOS Command Line Tools."
+  rbenv exec ruby -rrbconfig -e '
+    path = File.join(RbConfig::TOPDIR, "lib/ruby", RbConfig::CONFIG["ruby_version"], RbConfig::CONFIG["arch"], "rbconfig.rb")
+    text = File.read(path)
+    text.sub!(%q{CONFIG["CXX"] = "false"}, %q{CONFIG["CXX"] = "clang++"})
+    text.sub!(%q{CONFIG["CXXFLAGS"] = "-fdeclspec"}, %q{CONFIG["CXXFLAGS"] = "-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -fdeclspec"})
+    File.write(path, text)
+  '
+fi
+
+if ! rbenv exec gem list bundler -i -v 2.5.5 >/dev/null 2>&1; then
+  rbenv exec gem install bundler -v 2.5.5
+fi
+
+rbenv exec bundle _2.5.5_ install

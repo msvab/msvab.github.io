@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+export RBENV_VERSION="$(cat .ruby-version)"
+
+rbenv exec bundle _2.5.5_ exec jekyll serve
