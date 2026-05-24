@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-ruby '3.2.3'
+ruby '3.3.4'
 
-gem 'github-pages', '228', group: :jekyll_plugins
+gem 'github-pages', '232', group: :jekyll_plugins
 
 gem 'webrick', '1.8.1'
