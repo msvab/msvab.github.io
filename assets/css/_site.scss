@@ -76,6 +76,10 @@ a, :link, :visited {
   text-align: center;
 }
 
+.print-only {
+  display: none;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 920px;
@@ -287,6 +291,48 @@ footer {
 }
 
 @media print {
+  body.resume-page > header {
+    display: none;
+  }
+
+  .print-only {
+    display: block;
+  }
+
+  .resume-print-header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 2px solid $secondary-color;
+    text-align: left;
+
+    p {
+      margin: 0;
+      color: $primary-color !important;
+    }
+
+    .resume-print-header-name {
+      margin: 0 0 0.4rem 0;
+      color: $primary-color !important;
+      font-size: 3.6rem;
+      font-weight: $font-bolder;
+      text-transform: none;
+      letter-spacing: 0;
+    }
+
+    .resume-print-header-meta {
+      font-size: 1.8rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .resume-print-header-links {
+      font-size: 1.7rem;
+    }
+
+    a, :link, :visited {
+      color: $primary-color !important;
+    }
+  }
+
   .page-break	{
     padding-top: 5em;
     page-break-before: always;
